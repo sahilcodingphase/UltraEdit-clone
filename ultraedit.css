@@ -1,92 +1,105 @@
-body{
+.logo,
+.maingrid,
+.right ul,
+.right ul li,
+.section,
+.third span,
+nav {
+    display: flex;
+}
+
+.item1,
+.second {
+    text-align: center;
+}
+
+body {
     font-family: 'Segoe UI';
     margin: 0;
     padding: 0;
 }
+
 nav {
-    display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.logo{
-    display: flex;
 }
 
 .logo img {
     height: 55px;
     margin-top: 18px;
-
-    
 }
-.logo h1{
+
+.logo h1 {
     font-size: 27px;
     margin-left: 10px;
     margin-top: 25px;
 }
 
 .right ul {
-    display: flex;
     gap: 34px;
 }
 
 .right ul li {
-    display: flex;
     align-items: center;
     list-style: none;
 }
-.section{
-display: flex;
-flex-direction: column;
-gap: 35px;
-margin: 70px;
-align-items: center;
-justify-content: center;
+
+.section {
+    flex-direction: column;
+    gap: 35px;
+    margin: 70px;
+    align-items: center;
+    justify-content: center;
 }
-.section span{
-    font-size: 48px;
+
+.section span {
     font-weight: 400;
     font-size: 48px;
 }
-.section span img{
+
+.section span img {
     padding: 0 12px;
 }
-.second{
+
+.second {
     font-size: 24px;
     width: 62vw;
-    text-align: center;
 }
-.section button{
+
+.section button {
     padding: 15px 19px;
     font-size: 14px;
     font-weight: 700;
     background-color: #00b6d1;
     border-radius: 6px;
     border: none;
-    color: white;
+    color: #fff;
 }
-.third span{
-    display: flex;
+
+.item1 h4,
+.third strong {
+    font-weight: 400;
+}
+
+.third span {
     justify-content: center;
     width: 85vw;
     gap: 21px;
-
-}
-.third img{
-    padding: 12px 0px;
 }
 
-.third strong{
+.third img {
+    padding: 12px 0;
+}
+
+.third strong {
     font-size: 27px;
-    font-weight: 400;
-
 }
-.maingrid{
-    display: flex;
+
+.maingrid {
     justify-content: center;
 }
 
-.grid{
+.grid {
     display: grid;
     width: 66vw;
     grid-template-rows: repeat(4, 1fr);
@@ -95,44 +108,76 @@ justify-content: center;
     padding: 20px;
     gap: 23px 0;
 }
-.box{
+
+.box {
     height: 170px;
     width: 270px;
     padding: 16px;
     border-radius: 6px;
-    background: transparent;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     line-height: 1rem;
-
 }
 
-.item1{
-    text-align: center;
-}
-.item1 h4{
-    font-weight: 400;
-}
-
-.item1 button{
+.item1 button {
     padding: 9px 16px;
     border-radius: 6px;
     background-color: #5cb85c;
     border-style: none;
-    color: white;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 700;
 }
-.hash small{
+
+.hash small {
     font-size: 10px;
 }
 
-.hash p{
+.hash p {
     font-size: 9px;
     overflow-wrap: break-word;
 }
 
-.item1 h3,
-.item1 h4,
+.item1 .hash,
 .item1 button,
-.item1 .hash {
-    margin-top: 0px; /* Adjust this value as needed */
+.item1 h3,
+.item1 h4 {
+    margin-top: 0;
+}
+
+.footer {
+    background-color: black;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.fContent {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 300px 0px 300px;
+    gap: 120px;
+    padding-top: 68px;
+}
+
+.L1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.frm {
+    padding: 10px 35px 45px 35px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.frm h2 {
+    font-weight: 400;
+    color: #00b6d1;
+}
+
+.frm button {
+    font-weight: bold;
+    font-size: medium;
 }
